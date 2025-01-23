@@ -1,0 +1,19 @@
+{
+    "name": "github-copilot-extension-backend-template",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+    "forwardPorts": [
+        3000
+    ],
+    "postStartCommand": "export CODESPACE_NAME=$(gh codespace view --json name -q .name); gh codespace ports visibility 3000:public -c $CODESPACE_NAME",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot",
+                "github.copilot-chat"
+            ]
+        }
+    }
+}

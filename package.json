@@ -1,0 +1,33 @@
+{
+  "name": "github-copilot-extension-backend-template-nodejs",
+  "version": "1.0.0",
+  "description": "Template for creating a custom model extension for GitHub Copilot based on Express",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aatmmr/github-copilot-extension-backend-template-nodejs.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Copilot",
+    "Extensions",
+    "Skillsets"
+  ],
+  "author": "aatmmr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aatmmr/github-copilot-extension-backend-template-nodejs/issues"
+  },
+  "homepage": "https://github.com/aatmmr/github-copilot-extension-backend-template-nodejs#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "octokit": "^4.1.0"
+  },
+  "devDependencies": {
+    "@copilot-extensions/preview-sdk": "^5.0.1"
+  }
+}
